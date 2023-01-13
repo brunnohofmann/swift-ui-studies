@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A9A61FF2971B2CE00074C9A /* CircleGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9A61FE2971B2CE00074C9A /* CircleGroupsView.swift */; };
 		5AA2E01F2970B05900E94970 /* RestartAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA2E01E2970B05900E94970 /* RestartAppApp.swift */; };
 		5AA2E0212970B05900E94970 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA2E0202970B05900E94970 /* ContentView.swift */; };
 		5AA2E0232970B05A00E94970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA2E0222970B05A00E94970 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A9A61FE2971B2CE00074C9A /* CircleGroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupsView.swift; sourceTree = "<group>"; };
 		5AA2E01B2970B05900E94970 /* RestartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA2E01E2970B05900E94970 /* RestartAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartAppApp.swift; sourceTree = "<group>"; };
 		5AA2E0202970B05900E94970 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A9A61FD2971B2BE00074C9A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5A9A61FE2971B2CE00074C9A /* CircleGroupsView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		5AA2E0122970B05900E94970 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		5AA2E01D2970B05900E94970 /* RestartApp */ = {
 			isa = PBXGroup;
 			children = (
+				5A9A61FD2971B2BE00074C9A /* Components */,
 				5AA2E04D2970B2F500E94970 /* Screens */,
 				5AA2E04C2970B0CF00E94970 /* Sounds */,
 				5AA2E01E2970B05900E94970 /* RestartAppApp.swift */,
@@ -288,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA2E0512970B32A00E94970 /* OnboardingView.swift in Sources */,
+				5A9A61FF2971B2CE00074C9A /* CircleGroupsView.swift in Sources */,
 				5AA2E04F2970B31A00E94970 /* HomeView.swift in Sources */,
 				5AA2E0212970B05900E94970 /* ContentView.swift in Sources */,
 				5AA2E01F2970B05900E94970 /* RestartAppApp.swift in Sources */,
