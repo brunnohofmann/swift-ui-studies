@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    @State private var fruits = Fruit.sampleData
+    var fruits: [Fruit] = fruitsData
     
     var body: some View {
         TabView {
@@ -16,6 +16,6 @@ struct OnboardingView: View {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        OnboardingView(fruits: fruitsData)
     }
 }

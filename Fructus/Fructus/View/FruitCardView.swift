@@ -24,7 +24,7 @@ struct FruitCardView: View {
                     .fontWeight(.heavy)
                     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15) , radius: 2, x: 2, y: 2)
 //                HEADLINE
-                Text(fruit.text)
+                Text(fruit.headline)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
@@ -39,7 +39,7 @@ struct FruitCardView: View {
             }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center )
-        .background(LinearGradient(gradient: Gradient(colors: fruit.gradient), startPoint: .top, endPoint: .bottom))
+        .background(LinearGradient(gradient: Gradient(colors: fruit.gradientColors), startPoint: .top, endPoint: .bottom))
         .cornerRadius(20)
         .padding(.horizontal, 20)
     }
@@ -47,10 +47,10 @@ struct FruitCardView: View {
 
 // MARK: - PREVIEW
 struct FruitCardView_Previews: PreviewProvider {
-    static var fruit = Fruit.sampleData[0]
+    
 
     static var previews: some View {
-        FruitCardView(fruit: fruit)
+        FruitCardView(fruit: fruitsData[1])
             .previewLayout(.fixed(width: 320, height: 640))
     }
 }
