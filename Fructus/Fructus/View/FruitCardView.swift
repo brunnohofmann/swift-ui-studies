@@ -3,6 +3,7 @@ import SwiftUI
 struct FruitCardView: View {
     // MARK: - PROPERTIES
     @State private var isAnimating: Bool = false
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
     
     let fruit: Fruit
     
@@ -30,7 +31,9 @@ struct FruitCardView: View {
                     .padding(.horizontal, 16)
                     .frame(maxWidth: 480)
 //                BUTTON:START
-                StartButtonView()
+                ButtonView(label: "Start", action: {
+                    isOnboarding = false
+                })
             }
         }
         .onAppear{

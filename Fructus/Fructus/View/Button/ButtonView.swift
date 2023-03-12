@@ -7,13 +7,14 @@
 
 import SwiftUI
 
-struct StartButtonView: View {
+struct ButtonView: View {
+    let label: String
+    let action: () -> Void
+    
     var body: some View {
-        Button(action: {
-            print("Anything")
-        }){
+        Button(action: action){
             HStack(spacing: 8) {
-                Text("Start")
+                Text(label)
                 Image(systemName: "arrow.right.circle")
                     .imageScale(.large)
             }
@@ -30,7 +31,9 @@ struct StartButtonView: View {
 
 struct StartButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        StartButtonView()
+        ButtonView(label: "Start", action: {
+            print("test")
+        })
             .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
     }
